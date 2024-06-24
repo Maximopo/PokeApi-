@@ -1,10 +1,10 @@
-/* General styles */
+
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('https://cdn.pixabay.com/photo/2021/02/25/04/37/pokemon-6046600_1280.jpg'); /* URL de la imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
-    background-repeat: no-repeat; /* No repite la imagen */
-    background-attachment: fixed; /* Fija la imagen para que no se mueva al hacer scroll */
+    background-image: url('https://cdn.pixabay.com/photo/2021/02/25/04/37/pokemon-6046600_1280.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
     color: #333;
     margin: 0;
     padding: 0;
@@ -15,24 +15,21 @@ body {
     text-align: center;
 }
 
-/* Container styling */
 .container {
     max-width: 800px;
     margin: 20px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    background-color: rgba(255, 255, 255, 0.9); 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading */
 .container h4 {
     margin-bottom: 20px;
     font-size: 24px;
     color: #555;
 }
 
-/* Form elements */
 .form-label {
     font-weight: bold;
     color: #555;
@@ -62,7 +59,6 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Card styling */
 .card {
     width: 18rem;
     margin: 15px;
@@ -92,7 +88,6 @@ button:hover {
     padding: 15px;
 }
 
-/* Button in card */
 .btn-primary {
     background-color: #007bff;
     border: none;
@@ -107,7 +102,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Responsiveness */
+
 @media (max-width: 768px) {
     .container {
         width: 100%;
