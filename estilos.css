@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+}
+
+.card {
+    margin: 15px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
