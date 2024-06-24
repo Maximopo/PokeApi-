@@ -24,7 +24,7 @@ async function buscarPorURL(urlPokemon) {
                 <img src="${uriImg}" class="card-img-top" alt="${nombre}">
                 <div class="card-body">
                     <h5 class="card-title">${nombre}</h5>
-                    <a href="https://www.pokemon.com/us/pokedex/${nombre}" class="btn btn-primary" target="_blank">Learn More</a>
+                    <a href="https://www.pokemon.com/us/pokedex/${nombre}" class="btn btn-primary" target="_blank">Información del pokemon</a>
                 </div>
             </div>`;
         document.querySelector('#ConteinerCard').innerHTML = html;
