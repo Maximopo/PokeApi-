@@ -1,7 +1,10 @@
 /* General styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+    background-image: url('https://cdn.pixabay.com/photo/2021/02/25/04/37/pokemon-6046600_1280.jpg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-attachment: fixed; /* Fija la imagen para que no se mueva al hacer scroll */
     color: #333;
     margin: 0;
     padding: 0;
@@ -17,7 +20,7 @@ body {
     max-width: 800px;
     margin: 20px;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
