@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', solicitudAJAX);
 
 async function solicitudAJAX() {
     try {
-        const response = await fetch('https://pokeapi.co/api/v2/pokemon/');
+        const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1000');
         if (!response.ok) throw new Error(`Error: ${response.statusText}`);
         const data = await response.json();
         document.querySelector('#nPokemon').data = data;
