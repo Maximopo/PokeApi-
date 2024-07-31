@@ -39,7 +39,7 @@ body {
 
 input[type="number"] {
     width: calc(100% - 100px);
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 20px;
     margin-bottom: 10px;
