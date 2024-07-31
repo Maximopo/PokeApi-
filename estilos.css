@@ -28,6 +28,7 @@ body {
     margin-bottom: 20px;
     font-size: 30px;
     color: #93fc2b;
+    text-decoration: overline;
 }
 
 .form-label {
