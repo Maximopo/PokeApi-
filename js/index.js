@@ -1,14 +1,19 @@
 document.addEventListener('DOMContentLoaded', solicitudAJAX);
 
 async function solicitudAJAX() {
-    try {
-        const response = await fetch('https://pokeapi.co/api/v2/pokemon/');
-        if (!response.ok) throw new Error(`Error: ${response.statusText}`);
-        const data = await response.json();
-        document.querySelector('#nPokemon').data = data;
-    } catch (error) {
-        alert(`Fetch failed: ${error.message}`);
+    let allPokemon = [];
+    let limit = 100;
+    for (let offset = 0; offset < 1000; offset += limit) {
+        try {
+            const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`);
+            if (!response.ok) throw new Error(`Error: ${response.statusText}`);
+            const data = await response.json();
+            allPokemon = allPokemon.concat(data.results);
+        } catch (error) {
+            alert(`Fetch failed: ${error.message}`);
+        }
     }
+    document.querySelector('#nPokemon').data = { results: allPokemon };
 }
 
 async function buscarPorURL(urlPokemon) {
@@ -30,17 +35,5 @@ async function buscarPorURL(urlPokemon) {
         document.querySelector('#ConteinerCard').innerHTML = html;
     } catch (error) {
         alert(`Fetch failed: ${error.message}`);
-    }
-}
-
-function buscar() {
-    const tarjetas = document.querySelector("#nPokemon");
-    const busqueda = parseInt(document.querySelector("#nPokemon").value, 10) + 100;
-    const data = tarjetas.data;
-
-    if (busqueda >= 0 && busqueda < data.results.length) {
-        buscarPorURL(data.results[busqueda].url);
-    } else {
-        alert("Debe ingresar un número válido de Pokémon.");
     }
 }
