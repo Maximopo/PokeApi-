@@ -35,7 +35,7 @@ async function buscarPorURL(urlPokemon) {
 
 function buscar() {
     const tarjetas = document.querySelector("#nPokemon");
-    const busqueda = parseInt(document.querySelector("#nPokemon").value, 10) - 1;
+    const busqueda = parseInt(document.querySelector("#nPokemon").value, 1000) - 1;
     const data = tarjetas.data;
 
     if (busqueda >= 0 && busqueda < data.results.length) {
