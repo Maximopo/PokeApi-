@@ -37,7 +37,8 @@ body {
 .form-label {
     font-weight: bold;
     color: #00abfa;
-    font-size: 25px;
+    font-size: 30px;
+    font-family:OpenSans;
 }
 
 input[type="number"] {
