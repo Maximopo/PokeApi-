@@ -29,16 +29,19 @@ body {
 .container h4 {
     font-family:OpenSans;
     margin-bottom: 20px;
-    font-size: 35px;
+    font-size: 60px;
     color: #00abfa;
+    text-align: center;
     
 }
 
 .form-label {
     font-weight: bold;
-    color: #00abfa;
+    text-align: center;
     font-size: 30px;
-    font-family:OpenSans;
+    background: linear-gradient(to right, blue, orange, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 input[type="number"] {
@@ -120,4 +123,20 @@ button:hover {
         width: 100%;
         margin: 10px 0;
     }
+}
+
+.title {
+    text-align: center;
+    font-size: 60px;
+    background: linear-gradient(to right, blue, orange, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.title-logo {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: auto;
 }
