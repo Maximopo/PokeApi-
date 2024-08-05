@@ -125,15 +125,6 @@ button:hover {
     }
 }
 
-.title {
-    text-align: center;
-    font-size: 60px;
-    background: linear-gradient(to right, blue, orange, green);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
-}
-
 .title-logo {
     display: block;
     margin: 0 auto;
